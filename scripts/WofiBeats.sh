@@ -4,7 +4,7 @@
 CONFIG="$HOME/.config/hypr/wofi/WofiBig/config"
 STYLE="$HOME/.config/hypr/wofi/style.css"
 COLORS="$HOME/.config/hypr/wofi/colors"
-iDIR="$HOME/.config/hypr/mako/icons"
+iDIR="$HOME/.config/hypr/dunst/icons"
 
 
 # wofi window config (in %)

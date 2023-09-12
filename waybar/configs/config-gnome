@@ -15,7 +15,8 @@
 
 "modules-left": [
 	"custom/menu", 
-	"wlr/workspaces",
+	//"wlr/workspaces",
+	"hyprland/workspaces",
 	"custom/updater", 
 	"hyprland/window", 
 	],
@@ -23,6 +24,7 @@
 "modules-center": [
 	"clock",
 	"custom/light_dark",
+	"cava",
 	"custom/weather",
 	], 
 
@@ -35,6 +37,7 @@
 	"memory", 
 	"battery",  
 	"backlight",
+	"keyboard-state",
 	"pulseaudio",
 	//"wireplumber", 
 	"pulseaudio#microphone", 

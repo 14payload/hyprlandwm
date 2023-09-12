@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-iDIR="$HOME/.config/hypr/mako/icons"
+iDIR="$HOME/.config/hypr/dunst/icons"
 
 # Get keyboard brightness
 get_kbd_backlight() {
@@ -24,7 +24,7 @@ get_icon() {
 }
 # Notify
 notify_user() {
-	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$icon" "Keyboard Brightness : $current%"
+	notify-send -h string:x-dunst-stack-tag:brightness_notif -h int:value:$current -u low -i "$icon" "Keyboard Brightness : $current%"
 }
 
 # Change brightness

@@ -6,16 +6,16 @@ hypr_config_path="$HOME/.config/hypr"
 
 # Define the GTK themes for light and dark modes
 # Catppuccin
-light_gtk_theme="Catppuccin-Latte-Standard-Mauve-light"
-dark_gtk_theme="Catppuccin-Mocha-Standard-Mauve-dark"
-light_icon_theme="Shiny-Light-Icons"
-dark_icon_theme="Shiny-Dark-Icons"
+#light_gtk_theme="Catppuccin-Latte-Standard-Mauve-Light"
+#dark_gtk_theme="Catppuccin-Mocha-Standard-Mauve-Dark"
+#light_icon_theme="Shiny-Light-Icons"
+#dark_icon_theme="Shiny-Dark-Icons"
 
 # Mac-OS Like
-light_gtk_theme="Mojave-Light"
-dark_gtk_theme="Mojave-Dark"
-light_icon_theme="McMojave-circle"
-dark_icon_theme="McMojave-circle-dark"
+light_gtk_theme="Tokyonight-Light-B"
+dark_gtk_theme="Tokyonight-Dark-B"
+light_icon_theme="TokyoNight-SE"
+dark_icon_theme="TokyoNight-SE"
 
 # Define functions for notifying user and updating symlinks
 notify_user() {
@@ -34,7 +34,7 @@ path_param=$(echo $next_mode | sed 's/.*/\u&/')
 
 notify_user "$next_mode"
 ln -sf "${hypr_config_path}/waybar/style/style-${next_mode}.css" "${hypr_config_path}/waybar/style.css"
-ln -sf "${hypr_config_path}/mako/styles/config-${next_mode}" "${hypr_config_path}/mako/config"
+ln -sf "${hypr_config_path}/dunst/styles/dunstrc-${next_mode}" "${hypr_config_path}/dunst/dunstrc"
 ln -sf "${hypr_config_path}/wofi/styles/style-${next_mode}.css" "${hypr_config_path}/wofi/style.css"
 
 gtk_theme="${next_mode}_gtk_theme"

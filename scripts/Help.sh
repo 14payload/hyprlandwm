@@ -1,2 +1,2 @@
 #!/bin/sh
-foot -e micro ~/.config/hypr/HelpFile.md
+foot -e vim ~/.config/hypr/HelpFile.md

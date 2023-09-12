@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-iDIR="$HOME/.config/hypr/mako/icons"
+iDIR="$HOME/.config/hypr/dunst/icons"
+notification_timeout=1000
 
 # Get brightness
 get_backlight() {
@@ -25,7 +26,7 @@ get_icon() {
 
 # Notify
 notify_user() {
-	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$icon" "Brightness : $current%"
+	notify-send -h string:x-dunst-stack-tag:brightness_notif -h int:value:$current -u low -i "$icon" "Brightness : $current%"
 }
 
 # Change brightness

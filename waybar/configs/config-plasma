@@ -15,7 +15,8 @@
 
 "modules-left": [
 	"custom/menu", 
-	"wlr/workspaces",
+	//"wlr/workspaces",
+	"hyprland/workspaces",
 	//"custom/updater", 
 	"wlr/taskbar",
 	 ],
@@ -37,7 +38,8 @@
 	"pulseaudio",
 	//"wireplumber", 
 	"pulseaudio#microphone",
-	"custom/updater", 
+	"custom/updater",
+	"keyboard-state", 
 	"custom/cycle_wall",
 	"custom/power",
 	],
