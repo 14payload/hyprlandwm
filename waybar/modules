@@ -335,7 +335,7 @@
   },
   
   "custom/menu": {
-    "format": "",
+    "format": "",
     "tooltip": false,
     "on-click": "$HOME/.config/hypr/scripts/Wofi.sh",
     "on-click-right": "$HOME/.config/hypr/scripts/ChangeLayoutMenu.sh",
